@@ -51,14 +51,14 @@ students = [
 
 def full_name_email(student_info)
   student_info.each do |student|
-    puts  "{{#{student[:lastname]}}}, {{#{student[:firstname]}}}: {{#{student [:email]}}}"
+    puts  "#{student[:lastname]}, #{student[:firstname]}: #{student [:email]}"
   end
 end
 
 def name_with_T(student_info)
   student_info.each do |student|
     if student[:lastname].upcase.include?("T")
-      puts "{{#{student[:lastname]}}}, {{#{student[:firstname]}}}: {{#{student [:email]}}}"
+      puts "#{student[:lastname]}, #{student[:firstname]}: #{student [:email]}"
     end
   end
 end
